@@ -1,6 +1,8 @@
 $blue_color: #1eacc7
 $red_color: #FF5656
 
+@fa-font-path:   "../font";
+
 =btn_hover
 	&:hover
 		background-image: none
@@ -136,13 +138,13 @@ nav
 	background-color: #000000
 	color: #ffffff
 	font-size: 11px
-	font-weight: 300
+	font-weight: 400
 	text-transform: uppercase
 	text-align: center
 	z-index: 2
 	&_white
 		background-color: #fff
-		color: #000
+		color: #070716
 
 .title
 	position: relative
@@ -334,3 +336,86 @@ nav
 			li
 				&::before
 					background: url('../icons/check_red.svg') center center/cover no-repeat
+
+.cities
+	height: 716px
+	padding: 46px 0 22px 0
+	background: url('../img/bg/map.jpg') center center / cover no-repeat
+	a
+		display: block
+		margin-top: 430px
+		color: $blue_color
+		font-weight: 400
+		font-size: 15px
+		text-align: center
+		text-transform: uppercase
+
+footer
+	min-height: 155px
+	padding: 14px 23px 39px 23px
+	a 
+		&:hover 
+			text-decoration: none
+
+.footer
+	&_divider
+		margin: 0 auto
+		width: 301px
+		height: 7px
+		background-color: $blue_color
+	&_wrapper
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+	&_social
+		width: 160px
+		display: flex
+		justify-content: space-between
+		&_item 
+				display: flex 
+				justify-content: center
+				align-items: center
+				margin: 0 4px 
+				width: 32px
+				height: 32px
+				background-color: #070716
+				border-radius: 100%
+				span 
+					color: white
+	&_links
+		width: 390px
+		margin: 0 auto
+		&_main 
+			display: flex 
+			justify-content: space-between
+			padding: 0 10px
+			a 
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+		&_sub 
+			display: flex 
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+		&_lang 
+			display: block 
+			margin: 0 auto
+			color: $blue_color
+			font-size: 11px
+			font-weight: 400
+			margin-top: 19px
+			text-transform: uppercase
+			text-align: center
+	&_mobile
